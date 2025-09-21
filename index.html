@@ -9,22 +9,43 @@
 <body>
     <header>
         <nav>
+            <span>Sresizer</span>
             <ul>
                 <li>Resize</li>
                 <li>About</li>
             </ul>
+            <div>
+                <button>Sign up</button>
+                <button>Login</button>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="firstsection">
             <h1>Welcome to my full free Resizer</h1>
-            <form>
             <div>
-                <input type="file" name="" id="" accept=".jpg, .jpeg, .png">
-                <button>envoyer</button>
+                <article class="firstarticle">
+                    <label>
+                        <img src="content/img/upload.png" alt="">
+                        <input class="title" type="file" />
+                        Upload a File
+                    </label>
+                    <button>Envoyer</button>
+                </article>
+                <article class="secondarticle">
+                    <div>
+                        <input id="heightinput" type="text" placeholder="height">
+                        <input id="widthinput" type="text" placeholder="width">
+                        <input id="unittinput" type="search" placeholder="Unit">
+                    </div>
+                    <div class="articlediv">
+                        <input id="searchinput" type="search" placeholder="format">
+                    </div>
+                </article>
             </div>
-            <div></div>
-            </form>
+        </section>
+        <section>
+
         </section>
     </main>
     <footer>
