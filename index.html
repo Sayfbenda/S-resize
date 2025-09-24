@@ -21,6 +21,7 @@
         </nav>
     </header>
     <main>
+        <form action="" method="post">
         <section class="firstsection">
             <h1>Welcome to my full free Resizer</h1>
             <div>
@@ -30,13 +31,16 @@
                         <input class="title" type="file" />
                         Upload a File
                     </label>
-                    <button>Envoyer</button>
+                    <input type="submit" name="" id="btn" value="Envoyer">
                 </article>
                 <article class="secondarticle">
                     <div>
-                        <input id="heightinput" type="text" placeholder="height">
-                        <input id="widthinput" type="text" placeholder="width">
-                        <input id="unittinput" type="search" placeholder="Unit">
+                        <label for="fheight">Height</label>
+                        <input name="fheight" id="heightinput" type="text" placeholder="height">
+                        <label for="fwidth">Width</label>
+                        <input name="fwidth" id="widthinput" type="text" placeholder="width">
+                        <label for="funit">Unit</label>
+                        <input name="funit" id="unittinput" type="search" placeholder="Unit">
                     </div>
                     <div class="articlediv">
                         <input id="searchinput" type="search" placeholder="format">
@@ -44,6 +48,7 @@
                 </article>
             </div>
         </section>
+        </form>
         <section>
 
         </section>

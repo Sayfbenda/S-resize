@@ -31,7 +31,7 @@ header{
     background-color: gray;
     height: 60vh;
 }
-main > section > div{
+main > form > section > div{
     margin-top: 10vh;
     display: flex;
     justify-content: space-evenly;
@@ -39,7 +39,7 @@ main > section > div{
 h1{
     text-align: center;
 }
-button{
+#btn{
     color: white;
     background-color: #275efe;
     padding: 15px;
@@ -66,7 +66,7 @@ label{
 label:hover{
     cursor: pointer;
 }
-div > article > button{
+div > article > #btn{
     width: 6vw;
 }
 div > article{
@@ -94,7 +94,7 @@ article > div{
 .articlediv{
     width: 100%;
 }
-button{
+#btn{
     cursor: pointer;
 }
 main:nth-child(2){
