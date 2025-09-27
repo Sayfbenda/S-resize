@@ -1,102 +1,111 @@
+@font-face {
+  font-family: poppins;
+  src: url(content/font/poppins.bold.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(content/font/RobotoMono-Medium.ttf);
+}
 *{
     margin: 0;
     padding: 0;
 }
-header > nav > ul{
-    display: flex;
-    list-style: none;
-    gap: 20vh;
+body{
+    font-family: 'poppins';
 }
-nav{
-    display: flex;
-    align-items: center;
-    background-color: whitesmoke;
-    padding: 20px;
-    border-radius: 20px;
-}
-nav > span{
-    position: fixed;
-    left: 5vw;
-}
-nav > div{
-    position: fixed;
-    right: 5vw;
-}
-header{
+img{
     height: 5vh;
+}
+nav > ul{
     display: flex;
-    justify-content: center;
+    gap: 5vw;
+    list-style: none;
 }
-.firstsection{
-    background-color: gray;
-    height: 60vh;
-}
-main > form > section > div{
-    margin-top: 10vh;
+header > section > nav > div {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    gap: 1vw;
 }
-h1{
-    text-align: center;
+header > section > nav > div > input{
+    padding: 1vh;
+    border-radius: 10px;
 }
-#btn{
+header > section > nav > div > input:first-child{
+    background-color: #cff331;
+}
+header > section > nav > div > input:nth-child(2){
+    background-color: #000000;
     color: white;
-    background-color: #275efe;
-    padding: 15px;
-    border: none;
+}
+section > nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #cff331;
+    padding: 10px 0 10px 0;
+    border-bottom: 2px solid gray;
+}
+main > section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+}
+main{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+input[type=file]{
+    display: none;
+}
+main > section > article:nth-child(2) > form > label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    height: 20vh;
+    border: 2px solid;
+    background-color: #cff331;
     border-radius: 20px;
 }
-article{
+main > section > article:nth-child(2) > form > label:hover{
+    cursor: pointer;
+}
+
+main > section > article > form > input{
+    background-color: #cff331;
+    padding: 2vh;
+    border-radius: 20px;
+}
+
+form{
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
-input[type=file] {
-  display: none;
-}
-label{
-    background-color: whitesmoke;
-    width: 15vw;
-    height: 20vh;
+main > section > div:first-child{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+main > section > article{
+    display: flex;
+    height: 70%;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
 }
-label:hover{
+input[type="submit"]:hover{
     cursor: pointer;
 }
-div > article > #btn{
-    width: 6vw;
-}
-div > article{
-    display: flex;
-    align-items: center;
-}
-.secondarticle{
-    width: 25vw;
-    display: flex;
-    justify-content: space-evenly;
-}
-.secondarticle > div > input{
-    border: 1px solid black;
-    padding: 10px;
-    width: 7vw;
-}
-#searchinput{
-    width: 100%;
-}
-article > div{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-.articlediv{
-    width: 100%;
-}
-#btn{
+input[type="button"]:hover{
     cursor: pointer;
 }
-main:nth-child(2){
-    height: 150vh;
+footer > section{
+    height: 50vh;
+    background-color: #cff331;
 }
